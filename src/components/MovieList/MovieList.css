@@ -1,0 +1,22 @@
+ul {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+li {
+  /* padding: 0 10px; */
+  margin: 10px;
+  margin-bottom: 40px;
+  transition: 0.2s ease-in-out;
+  background-color: cadetblue;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  ul li {
+    flex: 0 0 12.3333%;
+  }
+}

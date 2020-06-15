@@ -1,0 +1,6 @@
+- Create a repo and generate a new react application.
+- Cleanup App.js and index.js and remove un unnecessary files.
+- Rewrite App.js as a functional component to use react hook.
+- Check Swapi API documentation page and try endpoint to understand how to create an interface for each property.
+- Create swapiFilms function to get list of movies.
+- Define Movies list component that integrates with swapiFilms to fetch the list of movies.
