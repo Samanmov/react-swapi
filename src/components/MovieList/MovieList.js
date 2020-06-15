@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from "react";
-import swapiFilms from "../../api/swapiFilms";
+import React from "react";
 import "./MovieList.css";
-const MovieList = () => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    getMovies();
-  }, []);
-  const getMovies = async () => {
-    const { data } = await swapiFilms();
-    console.log(data);
-    setMovies(data.results);
-  };
+const MovieList = ({ movies, movieClick }) => {
   return (
     <div className="Movie-list content">
       <ul>
         {movies.map((movie) => {
           return (
             <li key={movie.title}>
-              <a>
+              <a onClick={() => movieClick(movie)}>
                 <div className="wrapper">
                   <div className="card">
                     <h1>{movie.title}</h1>

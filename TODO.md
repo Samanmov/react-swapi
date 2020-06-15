@@ -3,4 +3,5 @@
 - Rewrite App.js as a functional component to use react hook.
 - Check Swapi API documentation page and try endpoint to understand how to create an interface for each property.
 - Create swapiFilms function to get list of movies.
-- Define Movies list component that integrates with swapiFilms to fetch the list of movies.
+- In App.js define aysnc function that integrates with swapiFilms to fetch the list of movies.
+- Create a child component called MovieList and passed the movies as props into the child component.
