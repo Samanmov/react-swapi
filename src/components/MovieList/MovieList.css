@@ -1,26 +1,68 @@
-ul {
-  margin: 0 auto;
-  width: 100%;
+.card-body {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  border: 5px solid green;
+  width: 100%;
 }
-li {
-  /* padding: 0 10px; */
-  margin: 10px;
-  margin-bottom: 40px;
-  transition: 0.2s ease-in-out;
-  background-color: cadetblue;
+.card {
   text-align: center;
-  justify-content: center;
+  border-radius: 8px;
+  list-style-type: none;
+  background-color: #282727;
+  margin: 15px;
+  padding: 5px;
+  flex: 0 0 22%;
+  height: 206px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
-  ul li {
-    flex: 0 0 12.3333%;
+  .movie-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1140px) {
+  .card {
+    flex: 1 0 44%;
+  }
+  .container {
+      margin: auto !important;
+      width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    flex: 0 0 90%;
   }
 }
 
 body {
-    background-color: black;
+  background-color: black;
+}
+.movie-name {
+  color: #edec51;
+  line-height: 41px;
+}
+.movie-release-date {
+  color: white;
+  font-weight: 100;
+}
+
+.container {
+  margin: auto;
+  width: 83%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
