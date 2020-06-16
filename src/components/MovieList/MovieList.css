@@ -5,7 +5,6 @@
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  border: 5px solid green;
   width: 100%;
 }
 .card {
@@ -33,8 +32,8 @@
     flex: 1 0 44%;
   }
   .container {
-      margin: auto !important;
-      width: 100% !important;
+    margin: auto !important;
+    width: 100% !important;
   }
 }
 
@@ -44,9 +43,6 @@
   }
 }
 
-body {
-  background-color: black;
-}
 .movie-name {
   color: #edec51;
   line-height: 41px;
