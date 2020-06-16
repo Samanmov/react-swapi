@@ -2,9 +2,19 @@
 
 React web application uses React Hook to show the list of the Star Wars movies and integrar with [The Star Wars API](https://swapi.dev/documentation).
 
-## Available Scripts
+## Components structure
+
+- The App.js component is responsible for holding all state of the application.
+- The App has configured the movie list, and movie Details and set the bypassing props the app down to each of those components.
+- Its parent component(‘App’) holds the theme value in a state and passes it down to children via props.
+
+### Installation & Usage
+
+`git clone https://github.com/Samanmov/react-swapi`
 
 In the project directory, you can run:
+
+### `npm install`
 
 ### `npm start`
 

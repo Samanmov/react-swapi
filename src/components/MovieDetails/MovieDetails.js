@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import * as _ from "lodash";
 import closeIcon from "../../assets/icons/close.svg";
 import "./MovieDetails.css";
-
+// The modal includes movies details information and characters' names.
 const MovieDetails = ({ movie, onClose, isShowing, actors }) => {
   return isShowing
     ? ReactDOM.createPortal(
@@ -38,7 +38,7 @@ const MovieDetails = ({ movie, onClose, isShowing, actors }) => {
                     <div className="grid-row">
                       {_.sortBy(actors, "name").map((x) => {
                         return (
-                          <div className="colum" key={x.hair_color}>
+                          <div className="colum" key={x.name}>
                             <div>{x.name}</div>
                           </div>
                         );
