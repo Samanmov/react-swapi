@@ -20,3 +20,7 @@ li {
     flex: 0 0 12.3333%;
   }
 }
+
+body {
+    background-color: black;
+}
