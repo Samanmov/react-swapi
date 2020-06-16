@@ -4,6 +4,7 @@ import swapiFilms from "./api/swapiFilms";
 import MovieList from "./components/MovieList/MovieList";
 import MovieDetails from "./components/MovieDetails/MovieDetails";
 import Spinner from "./components/ShareComponents/Spinner/Spinner";
+import "./App.css"
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -37,12 +38,12 @@ const App = () => {
       for await (const dataCharacters of movie.characters) {
         const response = await axios.get(dataCharacters);
         // add resultet response as new array
-        setCharacters((characters) => [...characters, response.data]);
+        setCharacters((characters) => [...characters, response.data ]);
       }
       setIsLoading(false);
       setIsShowing(!isShowing);
     } catch (error) {
-      console.error("Error to fetch the charactersP", error);
+      console.error("Error to fetch the characters", error);
       setIsLoading(false);
       setIsError(true);
     }
@@ -51,6 +52,7 @@ const App = () => {
   const closeModal = () => {
     setDetails(null);
     setIsShowing(false);
+    setCharacters([]);
   };
 
   return (
