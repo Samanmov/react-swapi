@@ -4,6 +4,8 @@ React web application uses React Hook to show the list of the Star Wars movies a
 
 ## Components structure
 
+![structure Image](https://raw.githubusercontent.com/Samanmov/react-swapi/master/components-structure.png)
+
 - The App.js component is responsible for holding all state of the application.
 - The App has configured the movie list, and movie Details and set the bypassing props the app down to each of those components.
 - Its parent component(‘App’) holds the theme value in a state and passes it down to children via props.
